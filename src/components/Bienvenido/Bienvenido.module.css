@@ -1,0 +1,11 @@
+.titulo {
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 15px;
+}
+
+.parrafo {
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+}
