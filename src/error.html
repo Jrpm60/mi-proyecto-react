@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Error</h1>
+
+    <script>
+
+        
+
+        try {
+            let edad=-3;
+
+        if (edad>=0) {
+                throw new Error("tu edad es igual o menor a 0");
+            }
+            console.log("edad es" );
+
+        }
+        catch (e) {
+            console.log("error linea 19");
+            console.log(e);
+        }
+
+        finally {
+            console.log("va a ejecutar si o si");
+        }
+       
+
+    </script>
+    
+</body>
+</html>

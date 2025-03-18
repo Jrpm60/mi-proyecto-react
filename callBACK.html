@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+    function fetchData(callback) {
+        setTimeout(() => {
+        console.log("Fetching data...");
+        callback(null, "Data loaded");  // error o data
+        }, 1000);
+    }
+
+    function mostrarData(callback) {
+        setTimeout(() => {
+        console.log("Mostrar data...");
+        callback(null, "Datos mostrados");
+        }, 2000);
+    }
+
+    function terminarData(callback) {
+        setTimeout(() => {
+        console.log("Terminar data...");
+        callback(null, "Proceso terminado");
+        }, 2000);
+    }
+
+    function main() {
+        fetchData((error, data) => {
+            if (error) {
+                console.error("Error:", error);
+            } else {
+                console.log("Success:", data);
+
+                mostrarData ((error,datos) => {
+                    if (error) {
+                        console.error("error en mostrar");
+                    }
+                    else {
+                        console.log('Succes', data);
+
+                        terminarData ((error,datos) => {
+                            if (error) {
+                                console.error("error al terminar");
+                            }
+                            else {
+                                console.log('Succes Terminando);
+                            }
+                })
+            }
+        });
+    }
+
+
+    main();
+
+
+  
+
+    </script>
+</body>
+</html>

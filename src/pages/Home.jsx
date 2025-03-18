@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import ErrorComponent from '../components/ErrorComponent'
+import Infouser from '../components/fetch.demo.jsx'
 
 
 
@@ -8,7 +10,8 @@ const Home = () =>  {
 
     return (
         <>
-        <h1>Home Page</h1>
+
+        <Infouser />
         
         </>
     )
