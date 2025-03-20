@@ -7,6 +7,12 @@ import About from "./pages/About";
 import Contactar from "./pages/Contactar";
 import Usuarios_din from "./pages/Usuarios_din";
 import Usuarios from "./pages/Usuarios";
+import Dashboard from "./pages/Dashboard";
+import ProtectedRoute from "./utils/ProtectedRoute";
+import BuscadorResultadoPage from "./pages/BuscadorResultadoPage";
+import BuscadorLibrosRes from "./pages/BuscadorLibrosRes";
+
+
 
 function App() {
  
@@ -20,6 +26,14 @@ function App() {
         <Route path="/contactar" element={<Contactar />} />
         <Route path="/Usuarios_din/:id" element={<Usuarios_din />} />
         <Route path="/Usuarios" element={<Usuarios />} />
+
+        <Route
+          path="/dashboard"
+          element={<ProtectedRoute element={<Dashboard />} />}/>
+
+        <Route path="/buscar" element={<BuscadorLibrosRes />} />
+
+
 
       </Routes>
   

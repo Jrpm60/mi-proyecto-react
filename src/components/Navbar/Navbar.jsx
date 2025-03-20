@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css"; // Import CSS module
-import logo from "../../assets/logo192.png"; // Import logo
+
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
-
-      <div className={styles.logo}>
-        <img src={logo} alt="Logo" />
-      </div>
+    <nav className={styles.navbar}>    
 
       <ul className={styles.navLinks}>
 
@@ -17,6 +13,8 @@ const Navbar = () => {
         <li><Link to="/AdivinaFruta">Adivina la Fruta</Link></li>
         <li><Link to="/contactar">Contactar</Link></li>
         <li><Link to="/usuarios">Usuarios</Link></li>
+        <li><Link to="/dashBoard">DashBoard</Link></li>
+        <li><Link to="/admin">Administrador</Link></li>
         
       </ul>
     </nav>
