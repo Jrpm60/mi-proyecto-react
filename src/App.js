@@ -1,43 +1,21 @@
 import './App.css';
-import {Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contactar from "./pages/Contactar";
-import Usuarios_din from "./pages/Usuarios_din";
-import Usuarios from "./pages/Usuarios";
-import Dashboard from "./pages/Dashboard";
-import ProtectedRoute from "./utils/ProtectedRoute";
-import BuscadorResultadoPage from "./pages/BuscadorResultadoPage";
-import BuscadorLibrosRes from "./pages/BuscadorLibrosRes";
-
-
+/* import Login from './components/Login/Login';
+import BotonMui from './components/BotonMui'; 
+import MinimalistPage from './components/MinimalistPage';
+import CardsMui from './components/CardsMui';
+import FiltrosMui from './components/FiltrosMui';*/
+import FiltrosMui2 from './components/FiltrosMui2';
 
 function App() {
- 
+
   return (
-    <>
-    <Navbar />
+    <div className="App">
+      <header className="App-header">
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contactar" element={<Contactar />} />
-        <Route path="/Usuarios_din/:id" element={<Usuarios_din />} />
-        <Route path="/Usuarios" element={<Usuarios />} />
-
-        <Route
-          path="/dashboard"
-          element={<ProtectedRoute element={<Dashboard />} />}/>
-
-        <Route path="/buscar" element={<BuscadorLibrosRes />} />
-
-
-
-      </Routes>
-  
-    </>
+        <FiltrosMui2/>
+         
+      </header>
+    </div>
   );
 }
 
