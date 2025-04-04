@@ -3,8 +3,10 @@ import './App.css';
 import BotonMui from './components/BotonMui'; 
 import MinimalistPage from './components/MinimalistPage';
 import CardsMui from './components/CardsMui';
-import FiltrosMui from './components/FiltrosMui';*/
+import FiltrosMui from './components/FiltrosMui';
 import FiltrosMui2 from './components/FiltrosMui2';
+import ValorUsu from './components/ValorUsu';*/
+import SessionStorage from './components/SessionStorage';
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <FiltrosMui2/>
+        <SessionStorage/>
          
       </header>
     </div>

@@ -82,27 +82,29 @@ const FiltrosMui2 = () => {
         label="Introduce Modelo"
         value={filter}
         onChange={handleFilterChange}
-        sx={{ marginBottom: '20px' }}
+        sx={{ marginBottom: '40px' }}
       />
 
       <TextField
         label="Introduce Combustible"
         value={filterc}
         onChange={handleFilterChangec}
-        sx={{ marginBottom: '20px' }}
+        sx={{ marginBottom: '40px' }}
       />
-
+      <br/>
       <Slider
         getAriaLabel={() => 'Rango de Precio'}
         value={filterp}
         onChange={handleFilterChangep}
-        valueLabelDisplay="auto"
+        valueLabelDisplay="on"
         getAriaValueText={valuetext}
         min={15000}
         max={95000}
         step={10000}
+        style={{ width: '300px' }}
       />
-
+      
+      <br/>
       
       <Button onClick={handleFilter} variant="contained" sx={{ marginBottom: '20px' }}>
         Ver Coincidencias
